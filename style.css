@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #E2754D;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    overflow: hidden;
+    font-family: gilroy;
+}
+#cursor{
+    height: 2vw;
+    width: 2vw;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99999999;
+    pointer-events: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    height: 6vh;
+    width: 100%;
+    /* background-color: red; */
+    border-bottom: .1vw solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw 0 1vw;
+}
+nav #logo{
+    height: 60%;
+}
+nav #logo #logoImg{
+    height: 100%;
+    width: 100%;
+    /* transition: .5s; */
+}
+nav #links{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+nav #links a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+nav #links button{
+    background-color: transparent;
+    border: none;
+    border-left: .1vw solid #000;
+    padding: .9vw 0 .9vw 1.5vw;
+    font-size: 1vw;
+}
+.content{
+    position: relative;
+    height: 84vh;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hLine{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: .1vw;
+    width: 100%;
+    background-color: #000;
+}
+#vLine{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: .1vw;
+    background-color: #000;
+}
+.content .circle{
+    height: 42vh;
+    width: 42vh;
+    border: .1vw solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform linear .15s;
+}
+/* #circle1{
+    transform: translate(-50%,-50%);
+}
+#circle2{
+    transform: translate(50%,-50%);
+}
+#circle3{
+    transform: translate(-50%,50%);
+}
+#circle4{
+    transform: translate(50%,50%);
+} */
+footer{
+    height: 10vh;
+    width: 100%;
+    /* background-color: brown; */
+    border-top: .1vw solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    overflow: hidden;
+}
+footer h2{
+    font-size: 2.2vw;
+    font-weight: 500;
+}
+footer h1{
+    font-weight: 500;
+    font-size: 2vw;
+}
+#arrow{
+    display: inline-block;
+}
